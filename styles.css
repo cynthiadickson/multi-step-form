@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(145deg, #c2410c, #f97316, #c2410c, #f97316);;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  padding: 24px;
+  width: 360px;
+  border-radius: 18px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+/* Step indicators */
+.steps {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.step {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #fff7ed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0b0b0b;
+  font-weight: 800;
+}
+
+.step.active {
+  background: #f74b07;
+  color: white;
+}
+
+/* Form steps */
+.form-step {
+  display: none;
+}
+
+.form-step.active {
+  display: block;
+}
+
+label {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #c2410c;
+}
+
+.error {
+  display: block;
+  color: #fa0d0d;
+  font-size: 14px;
+  font-weight: 600;
+  text-shadow: 0 0 4px rgba(245, 243, 243, 0.7); /* glow */
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #f74b07;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.prev {
+  background: #64748b;
+}
+
+.success {
+  text-align: center;
+  font-weight: 700;
+  color: #028030;
+  text-shadow: 0 0 4px rgba(245, 243, 243, 0.7); /* glow */
+  margin-top: 16px;
+}
+
+.hidden {
+  display: none;
+}
